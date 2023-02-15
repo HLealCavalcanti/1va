@@ -1,0 +1,15 @@
+#Função para executar as permutações dos pontos
+Função permutacao(L)
+ Se tamanho de L = 0 faça
+ Retorne [L]
+ Fim-se
+ listaAuxiliar = []
+ Para contador = 0 até (tamanho de L) faça
+ K = L[contador]
+ listaSemK = remova K em L
+ Para cada p em permutação(listaSemK) faça
+ Adicione K + p em listaAuxiliar
+ Fim-para
+ Fim-para
+ Retorne listaAuxiliar
+Fim-função
